@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* reset */
+
+
+/* header */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #222222;
+    color: white;
+}
+
+.nav-set{
+    padding: 20px;
+}
+
+
+
+
+/* fine header */
