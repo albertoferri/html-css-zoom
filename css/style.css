@@ -5,6 +5,15 @@
 }
 /* reset */
 
+body{
+    background-color: black;
+    font-family: sans-serif;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: ;
+}
+
 
 /* header */
 
@@ -17,6 +26,7 @@ nav{
     height: 80px;
     background-color: #222222;
     color: white;
+    z-index: 2;
 }
 
 .nav-set{
@@ -43,10 +53,13 @@ nav{
 }
 
 
-.fa,.material-symbols-outlined,.bi{
-    height: 30px;
-    padding: 10px;
-    font-size: inherit;
+.fa,.material-symbols-outlined{
+    height: 20px;
+}
+
+.fa-share{
+    color: #4cca15;
+    font-size: 20px;
 }
 
 
@@ -61,7 +74,77 @@ nav{
     font-size: .8em;
 }
 
-.nav-text span{
-}
 
 /* fine header */
+
+/* main */
+
+main{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: relative;
+    padding-top: 30px;
+    width: 100%;
+    height: calc(100vh - 80px);
+    padding: 40px;
+    overflow-y: auto;
+}
+
+.layout-call{
+    padding-bottom: 80px;
+}
+
+
+.img-user{
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.user-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: #0000006c;
+    bottom: 0;
+    width: 100px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.user .fa{
+    transform: translate(0,2px);
+    margin-right: 3px;
+}
+
+
+.user{
+    display: flex;
+    position: relative;
+}
+
+/* tool */
+.tool-call{
+    display: flex;
+    justify-content: flex-end;
+    background-color: black;
+    height: 50px;
+    padding: 6px 20px;
+    gap: 5px;
+}
+
+.tool-call>span,.fa-arrows-alt{
+    display: flex;
+    align-items: flex-start;
+    font-size: 15px;
+    height: 32px;
+    color: white;
+    background-color: #575757;
+    border-radius: 5px;
+    padding: 7px;
+    gap: 10px;
+}
+
+/* fine main */
